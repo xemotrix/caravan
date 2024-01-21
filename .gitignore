@@ -1,0 +1,7 @@
+assets/*
+_build/*
+.DS_Store
+.cache/*
+*.json
+*.o
+*.s

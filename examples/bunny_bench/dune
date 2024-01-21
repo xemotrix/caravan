@@ -1,0 +1,14 @@
+(executable
+ (public_name bunnybench)
+ (name bunnybench)
+ (libraries raylib caravan core)
+ (preprocess
+  (pps
+   ppx_deriving.show)))
+
+(env
+ (dev
+  (flags (:standard))
+  (ocamlopt_flags (:standard -g)))
+ (release
+  (ocamlopt_flags (:standard -O3))))
