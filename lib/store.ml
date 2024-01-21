@@ -7,6 +7,5 @@ let set t key data : t =
   t
 ;;
 
-let find (m : t) ~entity:k = Hashtbl.find m k
-let find_exn (m : t) ~entity:k = Hashtbl.find_exn m k
+let find t ~entity:k = Hashtbl.find t k
 let iteri = Hashtbl.iteri

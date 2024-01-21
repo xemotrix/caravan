@@ -1,9 +1,11 @@
 type t = ..
 
+module ID : ID.T
+
 module type T = sig
   type data
 
-  val id : ComponentID.t
+  val id : ID.t
   val of_component : t -> data
   val to_component : data -> t
 end

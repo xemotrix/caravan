@@ -3,8 +3,8 @@ module type T = sig
 end
 
 module type SYSTEM_BASE = sig
-  val main_component : ComponentID.t
-  val must_have : ComponentID.t list
+  val main_component : Component.ID.t
+  val must_have : Component.ID.t list
   val pre : World.t -> World.t
   val post : World.t -> World.t
   val update_entity : World.t -> Entity.t -> Component.t -> unit
